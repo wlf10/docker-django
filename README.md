@@ -1,6 +1,13 @@
 # docker-django
 
+## Simple run
+```
+docker run -v /local/path/to/django:/app/src bitwolff/django
+```
+
+## Production
 Create Dockerfile in Django project
+
 ```
 FROM bitwolff/django:latest
 

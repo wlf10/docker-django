@@ -2,7 +2,7 @@
 
 ## Simple run
 ```
-docker run -v /local/path/to/django:/app/src bitwolff/django
+docker run -p 8000:8000 -v /local/path/to/django:/app/src bitwolff/django
 ```
 
 ## Production

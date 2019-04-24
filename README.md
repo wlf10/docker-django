@@ -6,9 +6,6 @@ FROM bitwolff/django:latest
 
 WORKDIR /app/src
 COPY . /app/src/
-
-# Server
-EXPOSE 8000
 ```
 
 Create docker-composer

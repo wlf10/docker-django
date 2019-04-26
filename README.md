@@ -2,8 +2,17 @@
 
 ## Simple run
 ```
-docker run -p 8000:8000 -v /local/path/to/django:/app/src bitwolff/django
+docker run -d -p 8000:8000 -v /local/path/to/django:/app/src bitwolff/django
 ```
+-d run in deamond
+-p mapping local 8000 port to container port 8000
+-v mapping localproject folder to container
+
+## Example run command into container
+```
+docker exec -it <name> python manage.py migrate
+```
+
 
 ## Production
 Create Dockerfile in Django project

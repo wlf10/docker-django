@@ -13,6 +13,10 @@ docker run -d -p 8000:8000 -v /local/path/to/django:/app/src bitwolff/django
 docker exec -it <name> python manage.py migrate
 ```
 
+## Example run command into container to create superuser
+```
+docker exec -it suspicious_yalow python manage.py createsuperuser
+```
 
 ## Production
 Create Dockerfile in Django project
